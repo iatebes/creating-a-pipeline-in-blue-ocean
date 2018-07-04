@@ -12,5 +12,11 @@ pipeline {
         sh 'npm install'
       }
     }
+    stage('Check') {
+      steps {
+        sh '''ls -la
+pwd'''
+      }
+    }
   }
 }
